@@ -7,11 +7,11 @@ pip3 install flask-cors flask-restful flask
 
 #  Скачайте код из примера для развертывания шаблона приложения на flask
 
-export FLASK_APP=runserver.py
+export FLASK_APP=runserver.py  
 export FLASK_DEBUG=True
 # Создаем в базе данных sqlite таблицу users
-flask db init
-flask db migrate -m "Users models for test"
+flask db init  
+flask db migrate -m "Users models for test"  
 flask db upgrade
 # Запускам наш код
 flask run
